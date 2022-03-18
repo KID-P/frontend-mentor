@@ -7,7 +7,8 @@
   "scripts": {
     "bootstrap": "echo 'Server bootstraping' && yarn && lerna bootstrap",
     "cleanup": "echo 'Server cleaning' && lerna exec -- yarn cleanup && lerna clean && rm -rf node_modules",
-    "start": "echo 'Server starting' && node nodeServer.js"
+    "start": "echo 'Server starting' && node nodeServer.js",
+    "reset": "echo 'Server reseting' && yarn cleanup && lerna exec -- rm -rf yarn.lock && yarn bootstrap",
   },
   "license": "MIT"
 }
