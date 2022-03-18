@@ -6,8 +6,9 @@
   "scripts": {
     "bootstrap": "echo 'Repo bootstraping' && yarn && lerna bootstrap",
     "bootstrap:node-server": "echo 'Repo bootstraping node-server' && yarn && lerna bootstrap -- scope @frontend-mentor/{node-server}",
-    "cleanup": "echo 'Repo cleaning' && lerna exec -- yarn cleanup && lerna clean && rm -rf node_modules",
-    "start:node_server": "echo 'Repo starting node-server' && cd projects/node-server && yarn start",
+    "cleanup": "lerna exec -- yarn cleanup && lerna clean && rm -rf node_modules",
+    "cleanup:node-server": "echo 'Repo cleaning' && lerna exec -- yarn cleanup && lerna clean && rm -rf node_modules",
+    "start:node-server": "echo 'Repo starting node-server' && cd projects/node-server && yarn start",
     "reset": "echo 'Repo reseting' && yarn cleanup && lerna exec -- rm -rf yarn.lock && yarn bootstrap",
     "reset:node-server": "echo 'Repo reseting node-server' && cd projects/node-server && yarn cleanup && rm -rf yarn.lock && yarn bootstrap && lerna bootstrap"
   },
