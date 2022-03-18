@@ -3,6 +3,11 @@
   "version": "0.0.0",
   "description": "This is Frontend Mentor challenges.",
   "main": "app.js",
+  "scripts": {
+    "bootstrap": "yarn && lerna bootstrap",
+    "cleanup": "lerna exec -- yarn cleanup && lerna clean && rm -rf node_modules",
+    "reset": "yarn cleanup && lerna exec -- rm -rf yarn.lock && yarn bootstrap"
+  },
   "author": "KID-P",
   "license": "MIT",
   "devDependencies": {
