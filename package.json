@@ -1,0 +1,8 @@
+{
+  "name": "frontend-mentor",
+  "version": "0.0.0",
+  "description": "This is Frontend Mentor challenges.",
+  "main": "app.js",
+  "author": "KID-P",
+  "license": "MIT"
+}
